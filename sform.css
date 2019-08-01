@@ -41,7 +41,7 @@ button {
 .survey {
 	width: 40%;
 	margin: 0;
-	padding: 5%;
+	padding: 1% 5%;
 
 	background: rgba(242, 140, 140, 0.6);
 	color: white;
