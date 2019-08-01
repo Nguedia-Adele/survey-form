@@ -1,0 +1,152 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Roboto';
+
+	background-color: black;
+	background-image: url('./images/burger.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+	font-family: 'Great Vibes';
+	font-size: 55px;
+	font-weight: 10px;
+	text-align: center;
+}
+
+form {
+	margin: auto;
+	font-size: 18px;
+}
+
+button {
+	background-color: #ea0101;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width: 30%;
+	height: 50px;
+	font-size: 95%;
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.survey {
+	width: 40%;
+	margin: 0;
+	padding: 5%;
+
+	background: rgba(242, 140, 140, 0.6);
+	color: white;
+}
+
+.field {
+	padding: 8px 10px;
+	margin: 5px 0 15px 0;
+	width: 100%;
+	display: block;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+
+.no-bullet-list {
+	list-style: none;
+}
+
+.radiobtn {
+	outline: none;
+}
+
+.radiobtn {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: white;
+     color: #6c6c6c;
+     height: 20px;
+     width: 20px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+
+.radiobtn:checked::before {
+     position: absolute;
+     left: 7px;
+     top: 0px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+
+.radiobtn:checked {
+     background-color: #f1f1f1;
+}
+
+.check {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: white;
+     color: #6c6c6c;
+     height: 20px;
+     width: 20px;
+     border: 0;
+     border-radius: 3px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+
+.check:checked::before {
+     position: absolute;
+     left: 7px;
+     top: 0px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+
+.check:checked {
+     background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 530px) {
+	body {
+		font-size: 13px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	button {
+		width: 80%;
+		height: 30px;
+		font-size: 12px;
+	}
+
+	label {
+		font-size: 13px;
+	}
+
+	.survey {
+		width: 90%;
+		padding: auto;
+	}
+	.field {
+		width: 80%;
+		padding: 2px;
+	}
+}

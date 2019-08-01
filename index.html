@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link rel="stylesheet" href="./sform.css">
+	</head>
+
+	<body>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<div class="survey">
+			<h1 id="title">Tasty Burgers - Survey Form</h1>
+			<p id="description" class="text-center"><i>Because your opinion matters</i></p>
+
+			<form action="#" id="survey-form">
+				<div>
+					<label for="name" id="name-label">Name</label>
+					<input type="text" id="name"  name="name" placeholder="Please, enter your name" class="field" required>
+				</div>
+
+				<div>
+					<label for="email" id="email-label">Email</label>
+					<input type="email" id="email" name="email" placeholder="Your email" class="field" required>
+				</div>
+
+				<div>
+					<label for="number" id="number-label">Number of visits</label>
+					<input type="number" id="number" name="number" min="1" max="20" placeholder="How many times have you been here?" class="field">
+				</div>
+
+				<div>
+					<label for="user-rating">How likely are you to recommend this restaurant to a friend?</label>
+					<ul id="user-rating" class="no-bullet-list">
+						<li class="radio">
+							<input name="radio-button" value="1" type="radio" class="radiobtn">
+							<label>Very likely</label>
+						</li>
+						<li class="radio">
+							<input name="radio-button" value="2" type="radio" class="radiobtn">
+							<label>Maybe</label>
+						</li>
+						<li class="radio">
+							<input name="radio-button" value="3" type="radio" class="radiobtn">
+							<label>Not at all</label>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<label for="like">What do you like most?</label>
+					<select name="like" id="dropdown" class="field">
+						<option disabled value>Please, select an option</option>
+						<option value="service">Our products/services</option>
+						<option value="waiters">Friendly waiters</option>
+						<option value="setting">Setting</option>
+						<option value="fast">Rapid service</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="radio">How do you think we can make our service better?</label>
+					<ul class="no-bullet-list">
+						<li class="checkbox">
+							<input name="improvement" type="checkbox" value="1" class="check">
+							<label>Fries</label>
+						</li>
+						<li class="checkbox">
+							<input name="improvement" type="checkbox" value="2" class="check">
+							<label>Entertainmennt facilities</label>
+						</li>
+						<li class="checkbox">
+							<input name="improvement" type="checkbox" value="3" class="check">
+							<label>Give aways</label>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<label for="comments">Others</label>
+					<textarea name="comments" id="comments" rows="3" placeholder="Please, enter any other comments and suggestions here" class="field"></textarea>
+				</div>
+
+				<div class="text-center">
+					<button id="submit" type="submit">SUBMIT</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
